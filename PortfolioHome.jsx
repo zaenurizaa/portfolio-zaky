@@ -55,18 +55,18 @@ export default function PortfolioHome() {
   const navLinks = [
     { id: 'work', label: 'Work' },
     { id: 'experience', label: 'Experience' },
-    { id: 'certifications', label: 'Sertifikasi' },
+    { id: 'certifications', label: 'Certifications' },
     { id: 'about-skills', label: 'Skills' },
     { id: 'faq', label: 'FAQ' },
     { id: 'contact', label: 'Contact' }
   ];
 
   const faqs = [
-    { q: "Apakah Zaky menerima proyek pembuatan website mandiri?", a: "Tentu! Saya terbuka untuk proyek pembuatan website dari awal (UI/UX hingga backend) maupun pengembangan fitur spesifik." },
-    { q: "Teknologi apa yang paling sering digunakan?", a: "Saya sering menggunakan Laravel, PHP, MySQL untuk backend, dan HTML/CSS/React untuk frontend." },
-    { q: "Apakah bersedia bekerja secara remote?", a: "Sangat bersedia. Sebagian besar proyek yang saya kerjakan selama ini berjalan lancar secara remote." },
-    { q: "Bagaimana proses kerja dengan klien biasanya?", a: "Dimulai dari diskusi kebutuhan, pembuatan desain/wireframe, pengembangan kode, hingga testing dan rilis. Semua dilakukan dengan komunikasi rutin." },
-    { q: "Apakah bisa membuat desain sistem (UI/UX) saja tanpa kode?", a: "Bisa, saya berpengalaman merancang wireframe dan UI/UX sebelum tahap pengembangan kode." }
+    { q: "Do you accept independent website development projects?", a: "Absolutely! I am open to end-to-end website development projects (from UI/UX to backend) as well as specific feature development." },
+    { q: "What technologies do you use most often?", a: "I frequently use Laravel, PHP, and MySQL for the backend, and HTML/CSS/React for the frontend." },
+    { q: "Are you available for remote work?", a: "Very much so. Most of the projects I've worked on have been successfully completed remotely." },
+    { q: "What is your typical workflow with clients?", a: "It starts with requirement discussions, designing wireframes, coding, testing, and finally release. Everything is done with regular communication." },
+    { q: "Can you design systems (UI/UX) without coding?", a: "Yes, I am highly experienced in designing wireframes and UI/UX before jumping into the coding phase." }
   ];
 
   return (
