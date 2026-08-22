@@ -227,30 +227,20 @@ export default function PortfolioHome() {
           </motion.div>
           <div className="flex flex-col gap-8 md:gap-16">
             {[
-              { role: "Vice Governor of BEM Amikom", org: "BEM Universitas Amikom", year: "2023 - 2024", img: "/images/Bem.webp", desc: [
-                "Actively supervised the performance of 9 internal ministries.",
-                "Responsible for strategic decision-making and cross-functional coordination.",
-                "Successfully managed large-scale campus events and initiatives."
+              { role: "Communication & Info Staff", org: "BEM KM AMIKOM", img: "/images/Bem.webp", desc: [
+                "Designed and executed social media publication strategies to increase student engagement.",
+                "Managed photo and video documentation for university and national-scale events.",
+                "Took full responsibility for the visual quality of all official organizational promotional content."
               ] },
-              { role: "Internal Staff of HIMASI", org: "HIMASI", year: "2022 - 2023", img: "/images/Himasi.webp", desc: [
-                "Managed internal organizational activities and meetings.",
-                "Facilitated communication among members to ensure alignment.",
-                "Successfully executed several community-building events."
+              { role: "Head of External Dept.", org: "HIMASI", img: "/images/Eksternal.webp", desc: [
+                "Led a team in building and maintaining strategic relations with campus authorities and external organizations.",
+                "Initiated collaborative partnership programs that expanded the association's reach and branding.",
+                "Coordinated task distribution among members and ensured all departmental targets were met."
               ] },
-              { role: "Head of PDD PIMOPS", org: "PIMOPS Event", year: "2023", img: "/images/Pdd_Pimpos.webp", desc: [
-                "Led the Publication, Decoration, and Documentation (PDD) division.",
-                "Designed creative assets and managed social media campaigns.",
-                "Ensured seamless documentation and visual branding for the event."
-              ] },
-              { role: "External Staff of AMCC", org: "AMCC", year: "2021 - 2022", img: "/images/Eksternal.webp", desc: [
-                "Established partnerships with external tech organizations and speakers.",
-                "Managed public relations and handled external communication.",
-                "Expanded the community's networking reach and opportunities."
-              ] },
-              { role: "Internal Department of AMCC", org: "AMCC", year: "2022 - 2023", img: "/images/internal.webp", desc: [
-                "Fostered member engagement and internal skill development.",
-                "Organized internal coding workshops and evaluation sessions.",
-                "Streamlined internal workflows for better team efficiency."
+              { role: "Internal Department Staff", org: "HIMASI", img: "/images/internal.webp", desc: [
+                "Played an active role in maintaining member solidarity through internal strengthening programs.",
+                "Fully supported the operational aspects of various organizational agendas and routine discussions.",
+                "Served as an effective communication facilitator across divisions to ensure smooth event execution."
               ] }
             ].map((exp, idx) => (
               <motion.div
@@ -291,9 +281,9 @@ export default function PortfolioHome() {
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"
           >
             {[
-              { title: "Staff Internal Himasi", img: "/images/Sertif_INter.webp", date: "Jan 2026" },
-              { title: "Asisten Praktikum SMBD", img: "/images/Sertifikat_Asisten_AHMAD_ZAENURI_ZAFA_MUZAKY_Sistem_Manajemen_Basis_Data_1.webp", date: "Aug 2026" },
-              { title: "Anggota Sie PDD Pimaposma", img: "/images/Pdd_Pimpos.webp", date: "Jan 2026" }
+              { title: "Internal Staff HIMASI", img: "/images/Sertif_INter.webp", date: "Jan 2026" },
+              { title: "Database Management Teaching Assistant", img: "/images/Sertifikat_Asisten_AHMAD_ZAENURI_ZAFA_MUZAKY_Sistem_Manajemen_Basis_Data_1.webp", date: "Aug 2026" },
+              { title: "PDD Member PIMOPS", img: "/images/Pdd_Pimpos.webp", date: "Jan 2026" }
             ].map((cert, idx) => (
               <motion.div
                 variants={itemVariant}
@@ -449,7 +439,7 @@ export default function PortfolioHome() {
         <div className="w-full px-4 md:px-10 flex flex-col md:flex-row justify-between items-center md:items-start gap-8 max-w-[1200px] mx-auto">
           <div className="flex flex-col gap-4 text-center md:text-left">
             <div className="font-display text-[32px] md:text-[40px] font-black uppercase tracking-tighter">AHMAD ZAENURI</div>
-            <p className="font-medium text-[#4a4733] max-w-xs text-[15px]">Membangun pengalaman digital fungsional melalui desain yang berani dan kode yang tangguh.</p>
+            <p className="font-medium text-[#4a4733] max-w-xs text-[15px]">Building functional digital experiences through bold design and robust code.</p>
           </div>
 
           <div className="flex flex-col md:flex-row gap-12 md:gap-24 text-center md:text-left">
