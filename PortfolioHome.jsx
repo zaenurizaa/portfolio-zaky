@@ -150,12 +150,12 @@ export default function PortfolioHome() {
             </div>
 
             <p className="text-[18px] md:text-[20px] text-[#4a4733] max-w-3xl mt-4 leading-relaxed font-medium">
-              Saya mahasiswa Sistem Informasi Universitas Amikom Yogyakarta dengan passion di bidang Web Development, Digital Media, dan Pengelolaan Sistem. Terbiasa bekerja secara adaptif, terstruktur, serta mampu memadukan kreativitas dan kemampuan teknis dalam setiap proyek maupun kegiatan.
+              I am an Information Systems student at Amikom University Yogyakarta with a passion for Web Development, Digital Media, and System Administration. I am accustomed to working adaptively and structurally, capable of combining creativity and technical skills in every project and activity.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <a className="bg-[#ffeb3b] text-[#111111] font-bold text-[15px] uppercase px-8 py-4 border-[3px] border-[#111111] rounded-xl neubrutalism-shadow hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all text-center inline-flex justify-center items-center gap-2" href="#work">
-                Lihat Proyek
+                View Projects
                 <span className="material-symbols-outlined">arrow_forward</span>
               </a>
               <a className="bg-[#ffffff] text-[#111111] font-bold text-[15px] uppercase px-8 py-4 border-[3px] border-[#111111] rounded-xl neubrutalism-shadow hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all text-center inline-flex justify-center items-center gap-2" href="https://drive.google.com/drive/folders/18lmIp--VCDIrsTHWlsqFJFYUXii771QY?usp=sharing" target="_blank" rel="noopener noreferrer">
@@ -180,10 +180,10 @@ export default function PortfolioHome() {
             className="grid grid-cols-1 md:grid-cols-2 gap-8"
           >
             {[
-              { title: "AmikomEventHub", link: "https://3197-laravelapp-omega.vercel.app/", year: "2024", badgeColor: "bg-[#ffeb3b]", img: "/images/Amikomevent.webp", desc: "Platform web event mandiri dari UI/UX hingga sistem backend. Dilengkapi autentikasi, kategori acara, dan transaksi pemesanan tiket responsif.", tags: ["Laravel", "MySQL", "PHP"] },
-              { title: "Alidya Tour", link: "https://zaenurizaa.github.io/alidyatour/", year: "2024", badgeColor: "bg-[#ffdad6]", img: "/images/Alidya.webp", desc: "Website sewa mobil & wisata Jogja. Menampilkan landing page responsif, katalog armada, dan integrasi sistem pemesanan instan.", tags: ["HTML", "CSS", "PHP"] },
-              { title: "Forfume", link: "https://zaenurizaa.github.io/Forfume/", year: "2023", badgeColor: "bg-[#d1e4ff]", img: "/images/Forfume.webp", desc: "Platform e-commerce elegan untuk jual beli parfum eksklusif. Menampilkan katalog interaktif, pemrosesan pesanan, dan antarmuka belanja yang responsif.", tags: ["JavaScript", "HTML", "CSS"] },
-              { title: "Gamping Marine", link: "https://zaenurizaa.github.io/gampingmarine/", year: "2023", badgeColor: "bg-[#ffb3ae]", img: "/images/Gamping.webp", desc: "Website supplier ikan fresh premium. Dilengkapi katalog produk interaktif dan fitur tombol pemesanan langsung (Pesan Sekarang).", tags: ["HTML", "CSS", "PHP"] }
+              { title: "AmikomEventHub", link: "https://3197-laravelapp-omega.vercel.app/", year: "2024", badgeColor: "bg-[#ffeb3b]", img: "/images/Amikomevent.webp", desc: "Independent event web platform from UI/UX to backend systems. Features authentication, event categories, and a responsive ticket booking flow.", tags: ["Laravel", "MySQL", "PHP"] },
+              { title: "Alidya Tour", link: "https://zaenurizaa.github.io/alidyatour/", year: "2024", badgeColor: "bg-[#ffdad6]", img: "/images/Alidya.webp", desc: "Car rental & tour website in Yogyakarta. Features a responsive landing page, vehicle catalog, and instant booking system integration.", tags: ["HTML", "CSS", "PHP"] },
+              { title: "Forfume", link: "https://zaenurizaa.github.io/Forfume/", year: "2023", badgeColor: "bg-[#d1e4ff]", img: "/images/Forfume.webp", desc: "Elegant e-commerce platform for exclusive perfumes. Features an interactive catalog, order processing, and a highly responsive shopping interface.", tags: ["JavaScript", "HTML", "CSS"] },
+              { title: "Gamping Marine", link: "https://zaenurizaa.github.io/gampingmarine/", year: "2023", badgeColor: "bg-[#ffb3ae]", img: "/images/Gamping.webp", desc: "Premium fresh fish supplier website. Equipped with an interactive product catalog and a direct WhatsApp ordering integration.", tags: ["HTML", "CSS", "PHP"] }
             ].map((proj, idx) => (
               <motion.a
                 variants={itemVariant}
@@ -208,7 +208,7 @@ export default function PortfolioHome() {
                     ))}
                   </div>
                   <span className="inline-flex items-center gap-2 text-[15px] font-black uppercase text-[#111111] group-hover:text-blue-600 transition-colors mt-auto w-fit">
-                    Kunjungi Website
+                    Visit Website
                     <span className="material-symbols-outlined bg-[#111111] text-white p-1 rounded-full text-[16px] group-hover:rotate-45 transition-transform">arrow_outward</span>
                   </span>
                 </div>
@@ -227,9 +227,31 @@ export default function PortfolioHome() {
           </motion.div>
           <div className="flex flex-col gap-8 md:gap-16">
             {[
-              { role: "Staff Kominfo", org: "BEM KM AMIKOM", img: "/images/Bem.webp", desc: ["Merancang dan mengeksekusi strategi publikasi media sosial untuk meningkatkan engagement mahasiswa.", "Mengelola dokumentasi foto dan video pada event berskala universitas maupun nasional.", "Bertanggung jawab penuh atas kualitas visual dari setiap konten promosi resmi organisasi."] },
-              { role: "Kepala Departemen Eksternal", org: "HIMASI", img: "/images/Eksternal.webp", desc: ["Memimpin tim dalam membangun dan menjaga relasi strategis dengan pihak kampus serta organisasi luar.", "Menginisiasi program kerja sama kolaboratif yang memperluas jangkauan dan branding himpunan.", "Mengoordinasikan pembagian tugas antar anggota serta memastikan setiap target departemen tercapai."] },
-              { role: "Staff Departemen Internal", org: "HIMASI", img: "/images/internal.webp", desc: ["Berperan aktif dalam menjaga soliditas anggota melalui program-program penguatan internal himpunan.", "Mendukung penuh aspek operasional dari berbagai agenda kegiatan dan diskusi rutin organisasi.", "Menjadi fasilitator komunikasi yang efektif antar divisi untuk kelancaran eksekusi acara."] }
+              { role: "Vice Governor of BEM Amikom", org: "BEM Universitas Amikom", year: "2023 - 2024", img: "/images/Bem.webp", desc: [
+                "Actively supervised the performance of 9 internal ministries.",
+                "Responsible for strategic decision-making and cross-functional coordination.",
+                "Successfully managed large-scale campus events and initiatives."
+              ] },
+              { role: "Internal Staff of HIMASI", org: "HIMASI", year: "2022 - 2023", img: "/images/Himasi.webp", desc: [
+                "Managed internal organizational activities and meetings.",
+                "Facilitated communication among members to ensure alignment.",
+                "Successfully executed several community-building events."
+              ] },
+              { role: "Head of PDD PIMOPS", org: "PIMOPS Event", year: "2023", img: "/images/Pdd_Pimpos.webp", desc: [
+                "Led the Publication, Decoration, and Documentation (PDD) division.",
+                "Designed creative assets and managed social media campaigns.",
+                "Ensured seamless documentation and visual branding for the event."
+              ] },
+              { role: "External Staff of AMCC", org: "AMCC", year: "2021 - 2022", img: "/images/Eksternal.webp", desc: [
+                "Established partnerships with external tech organizations and speakers.",
+                "Managed public relations and handled external communication.",
+                "Expanded the community's networking reach and opportunities."
+              ] },
+              { role: "Internal Department of AMCC", org: "AMCC", year: "2022 - 2023", img: "/images/internal.webp", desc: [
+                "Fostered member engagement and internal skill development.",
+                "Organized internal coding workshops and evaluation sessions.",
+                "Streamlined internal workflows for better team efficiency."
+              ] }
             ].map((exp, idx) => (
               <motion.div
                 initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUpVariant}
@@ -304,7 +326,7 @@ export default function PortfolioHome() {
               <div className="bg-[#ffffff] border-[3px] border-[#111111] rounded-2xl p-8 neubrutalism-shadow relative">
                 <span className="material-symbols-outlined absolute -top-5 -left-5 text-4xl bg-[#ffeb3b] border-[3px] border-[#111111] rounded-full p-2 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">format_quote</span>
                 <p className="text-[#111111] text-[18px] md:text-[20px] leading-relaxed font-medium">
-                  Saya adalah seorang Web Developer dengan spesialisasi dalam merancang produk digital secara menyeluruh (End-to-End). Memiliki keahlian mendalam pada ekosistem JavaScript (React.js) untuk menciptakan antarmuka yang dinamis, berpadu dengan ketangguhan PHP, Laravel, dan MySQL di sisi arsitektur sistem. Fokus utama saya adalah menjembatani kode fungsional dengan standar UI/UX tingkat tinggi, memastikan setiap aplikasi tidak hanya beroperasi tanpa cela, namun juga memberikan pengalaman pengguna yang intuitif.
+                  I am a Web Developer specializing in designing end-to-end digital products. I have deep expertise in the JavaScript ecosystem (React.js) for creating dynamic interfaces, combined with the robustness of PHP, Laravel, and MySQL for scalable system architecture. My main focus is bridging highly functional code with premium UI/UX standards, ensuring every application not only operates flawlessly but also provides a highly intuitive and engaging user experience.
                 </p>
               </div>
             </motion.div>
@@ -377,7 +399,7 @@ export default function PortfolioHome() {
             initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUpVariant}
             className="flex flex-col md:flex-row justify-between items-start md:items-end border-b-[4px] border-[#111111] pb-6 gap-4"
           >
-            <h2 className="text-[36px] md:text-[56px] font-black text-[#111111] uppercase tracking-tight leading-none">Terhubung<br />Dengan Saya!</h2>
+            <h2 className="text-[36px] md:text-[56px] font-black text-[#111111] uppercase tracking-tight leading-none">Connect<br />With Me!</h2>
             <div className="font-bold text-[16px] bg-white border-[3px] border-[#111111] px-4 py-2 rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] uppercase">
               Open for work
             </div>
