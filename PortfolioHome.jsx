@@ -96,7 +96,7 @@ export default function PortfolioHome() {
             {navLinks.map((link) => (
               <li key={link.id}>
                 <a
-                  className={`px-3 py-1.5 rounded-full border-[3px] border-transparent transition-all duration-200 block ${activeSection === link.id ? 'bg-[#ffeb3b] border-[#111111] neubrutalism-shadow text-[#111111]' : 'text-[#4a4733] hover:text-[#111111] hover:bg-[#f2f2f2]'}`}
+                  className={`px-4 py-2.5 rounded-full border-[3px] border-transparent transition-all duration-200 block ${activeSection === link.id ? 'bg-[#ffeb3b] border-[#111111] neubrutalism-shadow text-[#111111]' : 'text-[#4a4733] hover:text-[#111111] hover:bg-[#f2f2f2]'}`}
                   href={`#${link.id}`}
                 >
                   {link.label}
@@ -108,11 +108,11 @@ export default function PortfolioHome() {
         <div className="hidden lg:block">
           <a href="https://drive.google.com/drive/folders/18lmIp--VCDIrsTHWlsqFJFYUXii771QY?usp=sharing" target="_blank" rel="noopener noreferrer" className="bg-[#111111] text-white font-bold text-[13px] uppercase px-5 py-2 border-[3px] border-[#111111] rounded-full hover:bg-white hover:text-[#111111] neubrutalism-shadow transition-all text-center inline-flex justify-center items-center gap-2 group">
             Download CV
-            <span className="material-symbols-outlined text-[18px] group-hover:-translate-y-1 transition-transform">download</span>
+            <span className="material-symbols-outlined text-[18px] group-hover:-translate-y-1 transition-transform" aria-hidden="true">download</span>
           </a>
         </div>
-        <button className="md:hidden p-2 border-[3px] border-[#111111] rounded bg-[#fcf9f8] neubrutalism-shadow">
-          <span className="material-symbols-outlined">menu</span>
+        <button aria-label="Toggle menu" className="md:hidden p-3 border-[3px] border-[#111111] rounded bg-[#fcf9f8] neubrutalism-shadow">
+          <span className="material-symbols-outlined" aria-hidden="true">menu</span>
         </button>
       </nav>
 
@@ -156,11 +156,11 @@ export default function PortfolioHome() {
             <div className="flex flex-col sm:flex-row gap-4 mt-8">
               <a className="bg-[#ffeb3b] text-[#111111] font-bold text-[15px] uppercase px-8 py-4 border-[3px] border-[#111111] rounded-xl neubrutalism-shadow hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all text-center inline-flex justify-center items-center gap-2" href="#work">
                 View Projects
-                <span className="material-symbols-outlined">arrow_forward</span>
+                <span className="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
               </a>
               <a className="bg-[#ffffff] text-[#111111] font-bold text-[15px] uppercase px-8 py-4 border-[3px] border-[#111111] rounded-xl neubrutalism-shadow hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all text-center inline-flex justify-center items-center gap-2" href="https://drive.google.com/drive/folders/18lmIp--VCDIrsTHWlsqFJFYUXii771QY?usp=sharing" target="_blank" rel="noopener noreferrer">
                 Download CV
-                <span className="material-symbols-outlined">download</span>
+                <span className="material-symbols-outlined" aria-hidden="true">download</span>
               </a>
             </div>
           </div>
@@ -209,7 +209,7 @@ export default function PortfolioHome() {
                   </div>
                   <span className="inline-flex items-center gap-2 text-[15px] font-black uppercase text-[#111111] group-hover:text-blue-600 transition-colors mt-auto w-fit">
                     Visit Website
-                    <span className="material-symbols-outlined bg-[#111111] text-white p-1 rounded-full text-[16px] group-hover:rotate-45 transition-transform">arrow_outward</span>
+                    <span className="material-symbols-outlined bg-[#111111] text-white p-1 rounded-full text-[16px] group-hover:rotate-45 transition-transform" aria-hidden="true">arrow_outward</span>
                   </span>
                 </div>
               </motion.a>
@@ -366,10 +366,11 @@ export default function PortfolioHome() {
               >
                 <button
                   onClick={() => setOpenFaq(openFaq === idx ? null : idx)}
+                  aria-expanded={openFaq === idx}
                   className="w-full flex justify-between items-center p-6 text-left focus:outline-none"
                 >
                   <span className="font-black text-[18px] md:text-[20px] text-[#111111] pr-4">{faq.q}</span>
-                  <span className={`material-symbols-outlined text-3xl transition-transform duration-300 border-[3px] border-[#111111] rounded-full bg-white ${openFaq === idx ? 'rotate-180' : ''}`}>
+                  <span className={`material-symbols-outlined text-3xl transition-transform duration-300 border-[3px] border-[#111111] rounded-full bg-white ${openFaq === idx ? 'rotate-180' : ''}`} aria-hidden="true">
                     expand_more
                   </span>
                 </button>
